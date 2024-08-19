@@ -1,0 +1,32 @@
+/* 
+  Idea for the transition inspired by Erik Terwan
+  Source: https://codepen.io/erikterwan/pen/EVzeRP
+  Add a whole turn for first and last span for fun, 45deg is fine
+*/
+
+span {
+  transition: transform 1.2s cubic-bezier(0.77, 0.2, 0.05, 1),
+    opacity 0.55s ease;
+}
+
+span:first-child {
+  transform-origin: 0% 0%;
+}
+
+span:nth-last-child(1) {
+  transform-origin: 0% 100%;
+}
+
+.menuOpen {
+  opacity: 1;
+  transform: rotate(405deg) translate(-2px, -1px);
+}
+
+.menuOpen:nth-last-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menuOpen:nth-last-child(1) {
+  transform: rotate(-405deg) translate(0, -1px);
+}

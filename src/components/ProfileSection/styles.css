@@ -1,0 +1,37 @@
+.scroller {
+  max-width: 1000px;
+}
+
+/* In case user disabled animation */
+.scroller-inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* else -> */
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  flex-wrap: nowrap;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 30%, white 70%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller-inner {
+  width: max-content;
+  animation: scroll 80s linear infinite;
+  flex-wrap: nowrap;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - 1rem));
+  }
+}
