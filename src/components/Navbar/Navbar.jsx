@@ -10,9 +10,12 @@ const Navbar = () => {
     setMobileDrawerIsOpen(!mobileDrawerIsOpen);
   };
   return (
-    <nav className="sticky top-0 z-50 py-space-xs backdrop-blur-lg border-b border-neutral-700/80">
+    <nav
+      className="sticky top-0 z-50 py-space-xs backdrop-blur-lg border-b border-neutral-700/80 max-w-full"
+      style={{ overflowX: "clip" }}
+    >
       {/* Container of mobile and large screen Navbar */}
-      <div className="max-w-screen-2xl mx-auto px-space-s-m text-step--1">
+      <div className="max-w-screen-2xl mx-auto px-space-s-m text-step--1 ">
         {/* Container of large Navbar*/}
         <div className="flex justify-between items-center">
           {/* Logo */}

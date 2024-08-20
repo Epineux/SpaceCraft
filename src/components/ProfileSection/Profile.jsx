@@ -18,7 +18,10 @@ const Dashboard = () => {
     ));
   };
   return (
-    <div className="mt-20 flex flex-col items-center">
+    <div
+      className="mt-20 flex flex-col items-center "
+      style={{ overflowX: "clip" }}
+    >
       <h1 className="text-yellow-400 uppercase text-xl font-bold box-shadow-glow py-1 px-2">
         Profile
       </h1>

@@ -7,11 +7,11 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <div className="max-w-screen-2xl mx-auto pt-20 px-6">
+      <main className="max-w-screen-2xl mx-auto">
         <HeroSection />
         <ProductsSection />
         <Profile />
-      </div>
+      </main>
     </div>
   );
 }
