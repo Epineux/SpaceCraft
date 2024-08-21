@@ -8,6 +8,11 @@
   color-scheme: dark;
   background-color: #1c1b22;
 
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+
   /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1500,21,1.333,5,3,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
   /* Type Scale Viewport */
@@ -71,9 +76,4 @@
   --space-container-2xl-3xl: clamp(4.5rem, 3.5847rem + 4.5763cqi, 7.875rem);
   /* Custom X-up Pairs */
   --space-s-xl: clamp(1.125rem, 0.3623rem + 3.8136vw, 3.9375rem);
-}
-
-html,
-body {
-  scroll-behavior: smooth;
 }
