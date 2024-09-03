@@ -1,0 +1,18 @@
+.container-type-wrapper {
+  container-type: inline-size;
+}
+
+.list-grid-layout {
+  display: grid;
+  gap: clamp(0.875rem, 0.8411rem + 0.1695vw, 1rem);
+  padding-inline: clamp(1.6875rem, 1.6028rem + 0.4237cqi, 2rem);
+}
+
+@container (width > 330px) {
+  .list-grid-layout {
+    grid-template-columns: 1fr 2fr;
+    svg {
+      margin-block: auto;
+    }
+  }
+}

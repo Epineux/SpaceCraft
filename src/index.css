@@ -76,4 +76,5 @@
   --space-container-2xl-3xl: clamp(4.5rem, 3.5847rem + 4.5763cqi, 7.875rem);
   /* Custom X-up Pairs */
   --space-s-xl: clamp(1.125rem, 0.3623rem + 3.8136vw, 3.9375rem);
+  --space-s-3xl: clamp(1.125rem, -0.7055rem + 9.1525vw, 7.875rem);
 }

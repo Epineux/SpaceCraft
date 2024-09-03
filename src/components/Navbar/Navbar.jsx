@@ -11,56 +11,56 @@ const Navbar = () => {
   };
   return (
     <nav
-      className="sticky top-0 z-50 py-space-xs backdrop-blur-lg border-b border-neutral-700/80 max-w-full"
+      className="sticky top-0 z-50 max-w-full border-b border-neutral-700/80 py-space-xs backdrop-blur-lg"
       style={{ overflowX: "clip" }}
     >
       {/* Container of mobile and large screen Navbar */}
-      <div className="max-w-screen-2xl mx-auto px-space-s-m text-step--1 ">
+      <div className="mx-auto max-w-screen-2xl px-space-s-m text-step--1">
         {/* Container of large Navbar*/}
-        <div className="flex justify-between items-center">
+        <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center flex-shrink-0">
-            <GiRocketFlight className="h-10 w-10 mr-space-3xs text-yellow-400" />
-            <span className="text-step-1 font-bold font-logo tracking-tight">
+          <div className="flex flex-shrink-0 items-center">
+            <GiRocketFlight className="mr-space-3xs h-10 w-10 text-yellow-400" />
+            <span className="font-logo text-step-1 font-bold tracking-tight">
               SpaceCraft
             </span>
           </div>
           {/* Navigation Links */}
-          <ul className="hidden lg:flex ml-space-s-xl gap-space-s-xl items-center">
+          <ul className="ml-space-s-xl hidden items-center gap-space-s-xl lg:flex">
             {navItems.map((item) => (
               <li key={item.label}>
                 <a href={item.href}>{item.label}</a>
               </li>
             ))}
           </ul>
-          <div className="hidden lg:flex justify-center gap-space-m items-center">
-            <a href="#" className="py-space-3xs px-space-2xs border rounded-md">
+          <div className="hidden items-center justify-center gap-space-m lg:flex">
+            <a href="#" className="rounded-md border px-space-2xs py-space-3xs">
               Sign In
             </a>
             <a
               href="#"
-              className="bg-gradient-to-r from-yellow-500 to-yellow-700 py-space-3xs px-space-2xs rounded-md"
+              className="rounded-md bg-gradient-to-r from-yellow-500 to-yellow-700 px-space-2xs py-space-3xs"
             >
               Create Account
             </a>
           </div>
-          <div className="lg:hidden flex flex-col justify-end">
+          <div className="flex flex-col justify-end lg:hidden">
             <button
               onClick={toggleMobileDrawer}
-              className="relative h-6 w-5 z-[60]"
+              className="relative z-[60] h-6 w-5"
             >
               <span
-                className={`block h-[2px] my-1 bg-neutral-50 rounded relative ${
+                className={`relative my-1 block h-[2px] rounded bg-neutral-50 ${
                   mobileDrawerIsOpen ? "menuOpen" : ""
                 }`}
               ></span>
               <span
-                className={`block h-[2px] my-1 bg-neutral-50 rounded relative ${
+                className={`relative my-1 block h-[2px] rounded bg-neutral-50 ${
                   mobileDrawerIsOpen ? "menuOpen" : ""
                 }`}
               ></span>
               <span
-                className={`block h-[2px] my-1 bg-neutral-50 rounded relative ${
+                className={`relative my-1 block h-[2px] rounded bg-neutral-50 ${
                   mobileDrawerIsOpen ? "menuOpen" : ""
                 }`}
               ></span>
@@ -69,24 +69,24 @@ const Navbar = () => {
         </div>
         {/* For mobile view, end of Navbar */}
         <div
-          className={`fixed right-0 top-0 z-50 bg-neutral-900 p-space-l flex flex-col transition-transform duration-700 ease-in-out lg:hidden ${
+          className={`fixed right-0 top-0 z-50 flex flex-col bg-neutral-900 p-space-l transition-transform duration-700 ease-in-out lg:hidden ${
             mobileDrawerIsOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
           <ul>
             {navItems.map((item) => (
-              <li key={item.label} className="py-4 border-b border-neutral-700">
+              <li key={item.label} className="border-b border-neutral-700 py-4">
                 <a href={item.href}>{item.label}</a>
               </li>
             ))}
           </ul>
-          <div className="flex gap-x-6 mt-4">
-            <a href="#" className="py-2 px-3 border rounded-md">
+          <div className="flex gap-x-6 pt-4">
+            <a href="#" className="rounded-md border px-3 py-2">
               Sign In
             </a>
             <a
               href="#"
-              className="bg-gradient-to-r from-yellow-500 to-yellow-700 py-2 px-3 rounded-md"
+              className="rounded-md bg-gradient-to-r from-yellow-500 to-yellow-700 px-3 py-2"
             >
               Create Account
             </a>

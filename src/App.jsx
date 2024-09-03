@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <main className="max-w-screen-2xl mx-auto">
+      <main className="mx-auto max-w-screen-2xl">
         <HeroSection />
         <ProductsSection />
         <Profile />

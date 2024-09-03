@@ -14,24 +14,24 @@ const Dashboard = () => {
   }, []);
   const displayImages = () => {
     return imageData.map((image, index) => (
-      <img key={index} src={image.src} alt={image.alt} className="w-48 h-48" />
+      <img key={index} src={image.src} alt={image.alt} className="h-48 w-48" />
     ));
   };
   return (
     <div
-      className="mt-20 flex flex-col items-center "
+      className="mt-20 flex flex-col items-center"
       style={{ overflowX: "clip" }}
     >
-      <h1 className="text-yellow-400 uppercase text-xl font-bold box-shadow-glow py-1 px-2">
+      <h1 className="box-shadow-glow px-2 py-1 text-xl font-bold uppercase text-yellow-400">
         Profile
       </h1>
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl  my-10 lg:mt-20 tracking-wide w-[25ch] text-center">
+      <h2 className="my-10 w-[25ch] text-center text-3xl tracking-wide sm:text-5xl lg:mt-20 lg:text-6xl">
         Share your last{" "}
-        <span className="bg-gradient-to-r from-yellow-400 to-yellow-800 text-transparent bg-clip-text">
+        <span className="bg-gradient-to-r from-yellow-400 to-yellow-800 bg-clip-text text-transparent">
           Space Adventures
         </span>{" "}
         with your friends on your{" "}
-        <span className="bg-gradient-to-r from-yellow-400 to-yellow-800 text-transparent bg-clip-text">
+        <span className="bg-gradient-to-r from-yellow-400 to-yellow-800 bg-clip-text text-transparent">
           SpaceCraft Profile
         </span>
       </h2>

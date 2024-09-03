@@ -26,13 +26,14 @@ export default {
         "step-container-5": "var(--step-container-5)",
       },
       boxShadow: {
-        glow: "0 0 0 2px rgb(250, 204, 21), 8px 8px 0 0 rgb(250, 204, 21);",
+        sectionTitle:
+          "0 0 0 2px rgb(250, 204, 21), 8px 8px 0 0 rgb(250, 204, 21);",
       },
       width: {
-        "dynamic-logo": "clamp(2.5rem, 30%, 4rem)",
+        "dynamic-logo": "clamp(2.7994rem, 2.0605rem + 3.6944cqi, 5.524rem)",
       },
       height: {
-        "dynamic-logo": "clamp(2.5rem, 30%, 4rem)",
+        "dynamic-logo": "clamp(2.7994rem, 2.0605rem + 3.6944cqi, 5.524rem)",
       },
       spacing: {
         "space-3xs": "var(--space-3xs)",
@@ -70,14 +71,15 @@ export default {
         "space-container-xl-2xl": "var(--space-container-xl-2xl)",
         "space-container-2xl-3xl": "var(--space-container-2xl-3xl)",
         "space-s-xl": "var(--space-s-xl)",
+        "space-s-3xl": "var(--space-s-3xl)",
       },
     },
   },
   plugins: [
-    function ({ addUtilities, theme, e }) {
+    function ({ addUtilities, theme }) {
       const newUtilities = {
-        ".box-shadow-glow": {
-          boxShadow: theme("boxShadow.glow"),
+        ".box-shadow-section-title": {
+          boxShadow: theme("boxShadow.sectionTitle"),
         },
       };
       addUtilities(newUtilities);
