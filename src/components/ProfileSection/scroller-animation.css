@@ -1,6 +1,5 @@
-.scroller {
-  max-width: 1000px;
-}
+/* Idea for the gradient-effect inspired by Kevin Powell
+  Source: https://codepen.io/kevinpowell/pen/BavVLra */
 
 /* In case user disabled animation */
 .scroller-inner {
@@ -9,7 +8,6 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
-
 /* else -> */
 .scroller[data-animated="true"] {
   overflow: hidden;
@@ -17,11 +15,11 @@
   -webkit-mask: linear-gradient(
     90deg,
     transparent,
-    white 20%,
-    white 80%,
+    white 40%,
+    white 60%,
     transparent
   );
-  mask: linear-gradient(90deg, transparent, white 30%, white 70%, transparent);
+  mask: linear-gradient(90deg, transparent, white 40%, white 60%, transparent);
 }
 
 .scroller[data-animated="true"] .scroller-inner {
@@ -34,4 +32,9 @@
   to {
     transform: translateX(calc(-50% - 1rem));
   }
+}
+
+.scroller-images {
+  width: clamp(14rem, 10rem + 7vw, 17rem);
+  height: clamp(14rem, 10rem + 7vw, 17rem);
 }

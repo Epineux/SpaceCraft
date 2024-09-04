@@ -10,7 +10,7 @@ const ProductsSection = () => {
   };
 
   return (
-    <div className="flex flex-col items-center p-space-l">
+    <div className="flex flex-col items-center p-space-l py-space-2xl">
       {/* Text part */}
       <h1 className="px-2 py-1 text-step-1 font-bold uppercase text-yellow-400 box-shadow-section-title">
         Products
@@ -24,7 +24,7 @@ const ProductsSection = () => {
       </h2>
       {/* Grid of Products */}
       <ul
-        className="px-space-s-3xl grid w-full grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-space-xs py-space-l"
+        className="px-space-s-3xl grid w-full max-w-6xl grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-space-xs py-space-l"
         onPointerMove={handlePointerMove}
       >
         {productsItems.map((item) => (

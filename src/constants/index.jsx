@@ -73,23 +73,28 @@ export const imageData = [
     alt: "astronaut",
   },
   {
-    src: "/assets/images/universe.jpg",
-    alt: "universe",
-  },
-  {
     src: "/assets/images/astronaut-2.jpg",
-    alt: "astronaut",
-  },
-  {
-    src: "/assets/images/spaceship.jpg",
-    alt: "spaceship",
-  },
-  {
-    src: "/assets/images/astronaut-4.jpg",
     alt: "astronaut",
   },
   {
     src: "/assets/images/planet-2.jpg",
     alt: "planet",
+  },
+  {
+    src: "/assets/images/astronaut-5.jpg",
+    alt: "spaceship",
+  },
+
+  {
+    src: "/assets/images/astronaut-4.jpg",
+    alt: "astronaut",
+  },
+  {
+    src: "/assets/images/universe.jpg",
+    alt: "universe",
+  },
+  {
+    src: "/assets/images/astronaut-6.jpg",
+    alt: "astronaut",
   },
 ];
