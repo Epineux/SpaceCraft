@@ -5,11 +5,14 @@ import {
   GiCompass,
   GiRobotGrab,
   GiAstronautHelmet,
+  GiAlliedStar,
 } from "react-icons/gi";
+import { FaRegCheckCircle } from "react-icons/fa";
+import { FaRegCircleXmark } from "react-icons/fa6";
 
 export const navItems = [
   { label: "Products", href: "#" },
-  { label: "Dashboard", href: "#" },
+  { label: "Profile", href: "#" },
   { label: "SpaceCrafters", href: "#" },
   { label: "About Us", href: "#" },
 ];
@@ -96,5 +99,59 @@ export const imageData = [
   {
     src: "/assets/images/astronaut-6.jpg",
     alt: "astronaut",
+  },
+];
+
+export const plansOptions = [
+  {
+    title: "Star-Explorer",
+    price: 0,
+    options: [
+      {
+        text: "Standard Spaceship Components",
+        logo: <FaRegCheckCircle />,
+      },
+      {
+        text: "Access to Components Documentation",
+        logo: <FaRegCheckCircle />,
+      },
+      { text: "Community Support Forum", logo: <FaRegCheckCircle /> },
+      { text: "No Customization Options", logo: <FaRegCircleXmark /> },
+    ],
+  },
+  {
+    title: "Space-Crafter",
+    price: 40,
+    options: [
+      {
+        text: "All StarExplorer Features",
+        logo: <FaRegCheckCircle />,
+      },
+      {
+        text: "Premium Spaceship Components",
+        logo: <FaRegCheckCircle />,
+      },
+      {
+        text: "Access to our In-Depth Build Guide",
+        logo: <FaRegCheckCircle />,
+      },
+      {
+        text: "Unlock All Customization Options",
+        logo: <FaRegCheckCircle />,
+      },
+    ],
+  },
+  {
+    title: "Galaxy-Master",
+    price: 280,
+    options: [
+      { text: "All SpaceCrafter Features", logo: <GiAlliedStar /> },
+      { text: "Unique Spaceship Components", logo: <GiAlliedStar /> },
+      {
+        text: "Personalized Spaceship Design Mentorship",
+        logo: <GiAlliedStar />,
+      },
+      { text: "Bespoke Ship Customization", logo: <GiAlliedStar /> },
+    ],
   },
 ];

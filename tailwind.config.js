@@ -54,7 +54,7 @@ export default {
         "space-container-xl": "var(--space-container-xl)",
         "space-container-2xl": "var(--space-container-2xl)",
         "space-container-3xl": "var(--space-container-3xl)",
-        "space-3xs-2xs:": "var(--space-3xs-2xs)",
+        "space-3xs-2xs": "var(--space-3xs-2xs)",
         "space-2xs-xs": "var(--space-2xs-xs)",
         "space-xs-s": "var(--space-xs-s)",
         "space-s-m": "var(--space-s-m)",

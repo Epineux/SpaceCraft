@@ -1,7 +1,7 @@
 import "./scroller-animation.css";
 import { imageData } from "../../constants/index.jsx";
 
-const Dashboard = () => {
+const Profile = () => {
   // Check if user has reduced motion enabled
   const animationAllowed = !window.matchMedia(
     "(prefers-reduced-motion: reduce)",
@@ -19,7 +19,7 @@ const Dashboard = () => {
 
   return (
     <div
-      className="flex flex-col items-center p-space-l py-space-2xl"
+      className="flex flex-col items-center p-space-l py-space-xl"
       style={{ overflowX: "clip" }}
     >
       {/* Text */}
@@ -65,4 +65,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Profile;
