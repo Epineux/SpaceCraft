@@ -24,7 +24,7 @@ const ProductsSection = () => {
       </h2>
       {/* Grid of Products */}
       <ul
-        className="px-space-s-3xl grid w-full max-w-6xl grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-space-xs py-space-l"
+        className="grid w-full max-w-6xl grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-space-xs px-space-s-3xl py-space-l"
         onPointerMove={handlePointerMove}
       >
         {productsItems.map((item) => (
@@ -38,7 +38,7 @@ const ProductsSection = () => {
                 className: "w-dynamic-logo h-dynamic-logo mx-auto",
               })}
               <div className="flex flex-col py-space-xs">
-                <h2 className="text-step-0 font-bold">{item.label}</h2>
+                <h3 className="text-step-0 font-bold">{item.label}</h3>
                 <p className="py-space-s text-step--1">{item.description}</p>
                 <div className="mt-auto flex items-center justify-evenly gap-space-2xs">
                   <p className="italic">

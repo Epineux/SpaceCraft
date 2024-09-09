@@ -14,7 +14,7 @@ export const navItems = [
   { label: "Products", href: "#" },
   { label: "Profile", href: "#" },
   { label: "SpaceCrafters", href: "#" },
-  { label: "About Us", href: "#" },
+  { label: "Testimonials", href: "#" },
 ];
 
 export const productsItems = [
@@ -153,5 +153,48 @@ export const plansOptions = [
       },
       { text: "Bespoke Ship Customization", logo: <GiAlliedStar /> },
     ],
+  },
+];
+
+export const testimonials = [
+  {
+    name: "Alex Johnson",
+    membership: "Space-Crafter",
+    image: "/assets/images/testimonial-profile1.jpg",
+    introduction:
+      "Building my own spaceship was a dream come true, and SpaceCraft made it possible.",
+    text: "The kit was so well-organized and easy to follow, even for a first-timer like me. Now, I’m exploring the far reaches of space, visiting planets I only ever dreamed of!",
+  },
+  {
+    name: "Tomie Katana",
+    membership: "Star-Explorer",
+    image: "/assets/images/testimonial-profile2.jpg",
+    introduction:
+      "Building my spaceship with SpaceCraft was a fantastic experience.",
+    text: " Now, I'm discovering new galaxies and living the ultimate space explorer's life!",
+  },
+  {
+    name: "Atsuko Chiba",
+    membership: "Galaxy-Master",
+    image: "/assets/images/testimonial-profile3.jpg",
+    introduction:
+      "SpaceCraft gave me the tools to live out my wildest space adventures.",
+    text: "After completing the build, I set off to explore the asteroid belt, and the journey was unforgettable. The support team was also amazing, answering all my questions along the way! The entire experience has sparked a newfound passion for space exploration in me.",
+  },
+  {
+    name: "Jake Thompson",
+    membership: "Space-Crafter",
+    image: "/assets/images/testimonial-profile4.jpg",
+    introduction: "Thanks to SpaceCraft, I’m now soaring through the stars!",
+    text: " The DIY kit was intuitive and gave me the freedom to customize my spaceship.",
+  },
+
+  {
+    name: "Motoko Kusanagi",
+    membership: "Galaxy-Master",
+    image: "/assets/images/testimonial-profile5.jpg",
+    introduction:
+      "I never thought I'd be able to build a spaceship from scratch, but SpaceCraft’s kit was a game-changer. ",
+    text: "The instructions were clear, and the materials were top-notch. I've now traveled to the moons of Jupiter, and the experience has been nothing short of incredible.",
   },
 ];

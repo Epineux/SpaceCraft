@@ -1,0 +1,7 @@
+.background-image {
+  background-image: url("/home/colza/VScode_Projects/Portfolio/Project/SpaceCraft/public/assets/images/background-space.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}

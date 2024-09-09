@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import ProductsSection from "./components/ProductsSection/ProductsSection";
 import Profile from "./components/ProfileSection/Profile";
 import SpaceCrafters from "./components/SpaceCrafters";
+import Testimonials from "./components/Testimonials/Testimonials";
 export default function App() {
   return (
     <div>
@@ -13,6 +14,7 @@ export default function App() {
         <ProductsSection />
         <Profile />
         <SpaceCrafters />
+        <Testimonials />
       </main>
     </div>
   );
