@@ -1,13 +1,29 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { GiRocketFlight } from "react-icons/gi";
 import { navItems } from "../../constants/index.jsx";
 import "./hamburgerMenu.css";
 
 const Navbar = () => {
   const [mobileDrawerIsOpen, setMobileDrawerIsOpen] = useState(false);
+  const mobileDrawerRef = useRef(null);
   const toggleMobileDrawer = () => {
     setMobileDrawerIsOpen(!mobileDrawerIsOpen);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (mobileDrawerIsOpen && !mobileDrawerRef.current.contains(e.target)) {
+        setMobileDrawerIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Remove event listener when the component unmounts
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [mobileDrawerIsOpen]);
 
   return (
     <nav
@@ -72,6 +88,7 @@ const Navbar = () => {
           className={`fixed right-0 top-0 z-50 flex flex-col bg-neutral-900 p-space-l transition-transform duration-700 ease-in-out lg:hidden ${
             mobileDrawerIsOpen ? "translate-x-0" : "translate-x-full"
           }`}
+          ref={mobileDrawerRef}
         >
           <ul>
             {navItems.map((item) => (

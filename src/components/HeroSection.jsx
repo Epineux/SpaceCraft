@@ -13,7 +13,7 @@ const HeroSection = () => {
             Galactic Explorers
           </span>
         </h1>
-        <p className="text-center text-step-0 text-neutral-400">
+        <p className="px-space-l-xl text-center text-step-0 text-neutral-400">
           Embark on an interstellar adventure with SpaceCraft, your online shop
           for premium spaceship components.
         </p>
@@ -31,7 +31,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* Video part */}
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-space-m px-space-3xl py-space-2xl">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-space-m px-space-s-3xl py-space-2xl">
         <video
           src={video1}
           autoPlay

@@ -24,7 +24,7 @@ const Profile = () => {
       style={{ overflowX: "clip" }}
     >
       {/* Text */}
-      <h1 className="px-2 py-1 text-step-1 font-bold uppercase text-yellow-400 box-shadow-section-title">
+      <h1 className="px-2 py-1 text-center text-step-1 font-bold uppercase text-yellow-400 box-shadow-section-title">
         Profile
       </h1>
       <h2 className="px-space-s-3xl py-space-l text-center text-step-3 leading-tight">
