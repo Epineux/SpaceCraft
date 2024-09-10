@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import { GiRocketFlight } from "react-icons/gi";
 import { navItems } from "../../constants/index.jsx";
@@ -9,6 +8,7 @@ const Navbar = () => {
   const toggleMobileDrawer = () => {
     setMobileDrawerIsOpen(!mobileDrawerIsOpen);
   };
+
   return (
     <nav
       className="sticky top-0 z-50 max-w-full border-b border-neutral-700/80 py-space-xs backdrop-blur-lg"
@@ -19,12 +19,12 @@ const Navbar = () => {
         {/* Container of large Navbar*/}
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex flex-shrink-0 items-center">
+          <a href="#" className="flex flex-shrink-0 items-center">
             <GiRocketFlight className="mr-space-3xs h-10 w-10 text-yellow-400" />
             <span className="font-logo text-step-1 font-bold tracking-tight">
               SpaceCraft
             </span>
-          </div>
+          </a>
           {/* Navigation Links */}
           <ul className="ml-space-s-xl hidden items-center gap-space-s-xl lg:flex">
             {navItems.map((item) => (

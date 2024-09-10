@@ -1,4 +1,3 @@
-import React from "react";
 import { testimonials } from "../../constants";
 import "./background-image.css";
 const gridItemsSpan = [
@@ -11,7 +10,10 @@ const gridItemsSpan = [
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col items-center p-space-l py-space-xl">
+    <section
+      id="testimonials"
+      className="flex flex-col items-center p-space-l py-space-2xl pb-space-xl"
+    >
       {/* Text */}
       <h1 className="px-2 py-1 text-step-1 font-bold uppercase text-yellow-400 box-shadow-section-title">
         Stories from the Stars
@@ -51,7 +53,7 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -8,11 +8,6 @@
   color-scheme: dark;
   background-color: #1c1b22;
 
-  html,
-  body {
-    scroll-behavior: smooth;
-  }
-
   h1,
   h2 {
     text-wrap: balance;

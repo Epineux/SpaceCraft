@@ -12,7 +12,10 @@ const SpaceCrafters = () => {
   };
 
   return (
-    <div className="flex flex-col items-center p-space-l py-space-2xl">
+    <section
+      id="spacecrafters"
+      className="flex flex-col items-center p-space-l py-space-2xl pb-space-xl"
+    >
       {/* Text part */}
       <h1 className="px-2 py-1 text-step-1 font-bold uppercase text-yellow-400 box-shadow-section-title">
         SpaceCrafters
@@ -39,7 +42,7 @@ const SpaceCrafters = () => {
                 ${plan.price}{" "}
                 <span className="text-step--1 text-neutral-400">/Month</span>
                 {plan.title === "Space-Crafter" && (
-                  <span className="px-space-3xs-2xs bg-gradient-to-b from-yellow-400 to-yellow-800 bg-clip-text text-step--1 text-transparent">
+                  <span className="bg-gradient-to-b from-yellow-400 to-yellow-800 bg-clip-text px-space-3xs-2xs text-step--1 text-transparent">
                     {" "}
                     Most Popular
                   </span>
@@ -65,7 +68,7 @@ const SpaceCrafters = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

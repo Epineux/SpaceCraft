@@ -1,4 +1,3 @@
-import React from "react";
 import video1 from "/assets/videos/video1.mp4";
 import video2 from "/assets/videos/video2.mp4";
 
@@ -6,7 +5,7 @@ const HeroSection = () => {
   return (
     // Hero flex container
     <div>
-      {/* Text and Hero image part (100vh*/}
+      {/* Text and Hero image part (100vh)*/}
       <div className="flex h-[calc(100vh-60px)] flex-col items-center justify-evenly bg-[url('/assets/images/heroImage.jpg')] bg-cover bg-center p-space-l">
         <h1 className="text-center text-step-5 tracking-wide">
           Spaceship Kits for <br />

@@ -11,10 +11,10 @@ import { FaRegCheckCircle } from "react-icons/fa";
 import { FaRegCircleXmark } from "react-icons/fa6";
 
 export const navItems = [
-  { label: "Products", href: "#" },
-  { label: "Profile", href: "#" },
-  { label: "SpaceCrafters", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Products", href: "#products-section" },
+  { label: "Profile", href: "#profile-section" },
+  { label: "SpaceCrafters", href: "#spacecrafters" },
+  { label: "Testimonials", href: "#testimonials" },
 ];
 
 export const productsItems = [

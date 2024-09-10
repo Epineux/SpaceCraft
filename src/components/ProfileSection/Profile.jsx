@@ -18,8 +18,9 @@ const Profile = () => {
   };
 
   return (
-    <div
-      className="flex flex-col items-center p-space-l py-space-xl"
+    <section
+      id="profile-section"
+      className="flex flex-col items-center p-space-l pb-space-xl pt-space-2xl"
       style={{ overflowX: "clip" }}
     >
       {/* Text */}
@@ -61,7 +62,7 @@ const Profile = () => {
           View Profiles
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

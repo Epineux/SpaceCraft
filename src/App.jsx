@@ -1,4 +1,5 @@
-import React from "react";
+import { useEffect } from "react";
+
 import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/HeroSection";
 import ProductsSection from "./components/ProductsSection/ProductsSection";
@@ -7,6 +8,11 @@ import SpaceCrafters from "./components/SpaceCrafters";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer";
 export default function App() {
+  // smooth scroll over the page, as React rendering cycle prevent the simple global css smooth behavior to be applied
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = "smooth";
+  }, []);
+
   return (
     <div>
       <Navbar />

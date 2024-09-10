@@ -10,7 +10,10 @@ const ProductsSection = () => {
   };
 
   return (
-    <div className="flex flex-col items-center p-space-l py-space-2xl">
+    <section
+      id="products-section"
+      className="flex flex-col items-center p-space-l pb-space-xl pt-space-2xl"
+    >
       {/* Text part */}
       <h1 className="px-2 py-1 text-step-1 font-bold uppercase text-yellow-400 box-shadow-section-title">
         Products
@@ -39,7 +42,9 @@ const ProductsSection = () => {
               })}
               <div className="flex flex-col py-space-xs">
                 <h3 className="text-step-0 font-bold">{item.label}</h3>
-                <p className="py-space-s text-step--1">{item.description}</p>
+                <p className="py-space-s text-step--1 text-neutral-400">
+                  {item.description}
+                </p>
                 <div className="mt-auto flex items-center justify-evenly gap-space-2xs">
                   <p className="italic">
                     From{" "}
@@ -47,8 +52,8 @@ const ProductsSection = () => {
                       {item.price}$
                     </span>
                   </p>
-                  <button className="rounded bg-gradient-to-r from-yellow-500 to-yellow-800 px-2 py-1 font-bold">
-                    Buy Now
+                  <button className="rounded border border-yellow-400 px-2 py-1 text-step--2 font-bold uppercase text-neutral-400 transition duration-300 ease-in-out hover:text-white">
+                    Explore
                   </button>
                 </div>
               </div>
@@ -56,7 +61,7 @@ const ProductsSection = () => {
           </div>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 
