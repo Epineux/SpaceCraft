@@ -13,7 +13,9 @@ const Navbar = () => {
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (mobileDrawerIsOpen && !mobileDrawerRef.current.contains(e.target)) {
-        setMobileDrawerIsOpen(false);
+        setTimeout(() => {
+          setMobileDrawerIsOpen(false);
+        }, 100);
       }
     };
 
