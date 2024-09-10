@@ -5,6 +5,7 @@ import ProductsSection from "./components/ProductsSection/ProductsSection";
 import Profile from "./components/ProfileSection/Profile";
 import SpaceCrafters from "./components/SpaceCrafters";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Footer from "./components/Footer";
 export default function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ export default function App() {
         <SpaceCrafters />
         <Testimonials />
       </main>
+      <Footer />
     </div>
   );
 }

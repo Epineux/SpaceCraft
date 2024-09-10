@@ -198,3 +198,17 @@ export const testimonials = [
     text: "The instructions were clear, and the materials were top-notch. I've now traveled to the moons of Jupiter, and the experience has been nothing short of incredible.",
   },
 ];
+
+export const footerLinks = [
+  { category: "Company", links: ["About Us", "Team", "Careers", "Contact"] },
+  {
+    category: "Customer Support",
+    links: [
+      "FAQ",
+      "Shipping & Returns",
+      "Privacy Policy",
+      "Terms & Conditions",
+    ],
+  },
+  { category: "Stay Connected", links: ["Newsletters", "Affiliate Program"] },
+];
