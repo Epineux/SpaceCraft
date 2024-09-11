@@ -13,6 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (mobileDrawerIsOpen && !mobileDrawerRef.current.contains(e.target)) {
+        // set Timeout to avoid reopening the drawer when clicking on the xmark
         setTimeout(() => {
           setMobileDrawerIsOpen(false);
         }, 100);

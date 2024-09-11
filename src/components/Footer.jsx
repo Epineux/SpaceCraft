@@ -39,7 +39,7 @@ const Footer = () => {
                     <FaLinkedin />
                   </a>
                   <a
-                    href="#"
+                    href="https://github.com/Epineux/SpaceCraft"
                     className="text-neutral-400 hover:text-neutral-300"
                   >
                     <FaGithub />
