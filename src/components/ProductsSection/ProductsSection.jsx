@@ -15,7 +15,7 @@ const ProductsSection = () => {
       className="flex flex-col items-center p-space-l pb-space-xl pt-space-2xl"
     >
       {/* Text part */}
-      <h1 className="px-2 py-1 text-step-1 font-bold uppercase text-yellow-400 box-shadow-section-title">
+      <h1 className="border-b-2 border-yellow-500 bg-gradient-to-r from-yellow-700 via-yellow-400 to-yellow-700 bg-clip-text px-4 py-1 font-logo text-step-2 font-bold uppercase italic tracking-tighter text-transparent">
         Products
       </h1>
       <h2 className="py-space-l text-center text-step-4 tracking-wide">
@@ -32,7 +32,10 @@ const ProductsSection = () => {
       >
         {productsItems.map((item) => (
           // To get the size of my actual item for container query + flex so they have all the same height with flex-grow
-          <div key={item.label} className="container-type-wrapper flex">
+          <div
+            key={item.label}
+            className="container-type-wrapper relative flex"
+          >
             <li
               className="gradient-effect list-grid-layout flex-grow py-5"
               style={{ container: "inline-size" }}
